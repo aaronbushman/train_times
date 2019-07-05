@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 </head>
 
 <body>
@@ -38,22 +40,24 @@
                         <input type="text" class="form-control" id="trainName" placeholder="Train Name">
                     </div>
                     <div class="form-group">
-                        <label for="name">Train Destination:</label>
+                        <label for="trainDest">Train Destination:</label>
                         <input type="text" class="form-control" id="trainDest" placeholder="Train Destination">
                     </div>
                     <div class="form-group">
-                            <label for="firstTT">First Train Departure: (HH:mm - military style)</label>
-                            <input type="number" class="form-control" id="firstTT" placeholder="First Train Departure">
+                            <label for="firstDept">First Train Departure: (HH:mm - military style)</label>
+                            <input type="number" class="form-control" id="firstDept" placeholder="First Train Departure">
                     </div>
                     <div class="form-group">
                             <label for="trainFreq">Train Frequency: (minutes)</label>
                             <input type="number" class="form-control" id="trainFreq" placeholder="Train Frequency">
                     </div>
-                    <button id="formFill" type="submit" class="btn btn-light">Submit</button>
+                    <button id="submitB" type="submit" class="btn btn-light">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+
+<script src="app.js"></script>
 </body>
 
 </html>

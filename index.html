@@ -1,6 +1,59 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <title>train times</title>
-    <meta
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Train</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Freq in minutes</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Mins away</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 style="text-align: center;">Train Info Form</h3>
+            </div>
+            <div class="col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name:</label>
+                        <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Train Destination:</label>
+                        <input type="text" class="form-control" id="trainDest" placeholder="Train Destination">
+                    </div>
+                    <div class="form-group">
+                            <label for="firstTT">First Train Departure: (HH:mm - military style)</label>
+                            <input type="number" class="form-control" id="firstTT" placeholder="First Train Departure">
+                    </div>
+                    <div class="form-group">
+                            <label for="trainFreq">Train Frequency: (minutes)</label>
+                            <input type="number" class="form-control" id="trainFreq" placeholder="Train Frequency">
+                    </div>
+                    <button id="formFill" type="submit" class="btn btn-light">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
